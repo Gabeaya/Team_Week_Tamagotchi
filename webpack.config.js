@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -17,10 +18,18 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'template-repo', // change title 
-      template: './src/index.html',
-      inject: 'body'
-    })
+        template: './src/index.html',
+        inject: true,
+        chunks: ['index'], // chunks references .js file
+        filename: 'index.html', 
+    }),
+    new HtmlWebpackPlugin({ 
+        template:'./src/tamagotchi-page.html',
+        inject: true,
+        chunks: ['index'],
+        filename: 'tamagotchi-page.html'
+    }),
+
     
   ],
   module: {
