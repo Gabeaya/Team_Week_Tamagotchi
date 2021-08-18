@@ -7,8 +7,17 @@ import './css/styles.css';
 
 
 $(document).ready(function() {
-  $('#select').submit(function() {
+  $('#left-button').click(function() {
+    alert("you hit the left button");
     event.preventDefault();
-
   });
+  $('#select-button').click(function() {
+    alert("you hit the select button");
+    event.preventDefault();
+  });
+  $('#right-button').click(function() {
+    alert("you hit the right button");
+    event.preventDefault();
+  });
+
 });
