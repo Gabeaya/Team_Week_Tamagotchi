@@ -44,6 +44,97 @@ body {
   cursor: pointer;
 }
 
+.container .play {
+  position: absolute;
+  top: 68%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+}
+
+.container .play-highlight {
+  position: absolute;
+  top: 68%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:lightgray;
+  border-style: inset;
+  width: 69px;
+  height: 69px;
+  display: none;
+}
+
+.container .nap-highlight {
+  position: absolute;
+  top: 38%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:lightgray;
+  border-style: inset;
+  width: 69px;
+  height: 69px;
+  display: none;
+}
+
+.container .nap {
+  position: absolute;
+  top: 38%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+}
+
+.container .feed {
+  position: absolute;
+  top: 38%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+}
+
+.container .feed-highlight {
+  position: absolute;
+  top: 38%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  background-color:lightgray;
+  border-style: inset;
+  width: 69px;
+  height: 69px;
+}
+
+
+.container .clean {
+  position: absolute;
+  top: 68%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+}
+
+.container .clean-highlight{
+  position: absolute;
+  top: 68%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  background-color:lightgray;
+  border-style: inset;
+  width: 69px;
+  height: 69px;
+  display: none;
+}
+
 
 
 
