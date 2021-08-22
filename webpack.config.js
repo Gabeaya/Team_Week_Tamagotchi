@@ -18,16 +18,14 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+        title: 'tamogotchi',
         template: './src/index.html',
-        inject: true,
-        chunks: ['index'], // chunks references .js file
-        filename: 'index.html', 
+        inject: 'body',
     }),
     new HtmlWebpackPlugin({ 
         template:'./src/tamagotchi-page.html',
-        inject: true,
-        chunks: ['index'],
-        filename: 'tamagotchi-page.html'
+        filename: 'tamagotchi-page.html',
+        inject: 'body'
     }),
 
     
