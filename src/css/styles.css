@@ -213,10 +213,6 @@ a:hover span::after  {
 }
 
 
-
-
-
-
 .container .feed-highlight {
   position: absolute;
   top: 38%;
@@ -253,7 +249,7 @@ a:hover span::after  {
 
 .container .feed-90{
   position: absolute;
-  top: 38.6%;
+  top: 38.18%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -265,7 +261,7 @@ a:hover span::after  {
 
 .container .feed-80{
   position: absolute;
-  top: 39.4%;
+  top: 38.45%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -277,7 +273,7 @@ a:hover span::after  {
 
 .container .feed-70{
   position: absolute;
-  top: 40.3%;
+  top: 38.75%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -289,7 +285,7 @@ a:hover span::after  {
 
 .container .feed-60{
   position: absolute;
-  top: 41%;
+  top: 39.25%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -301,7 +297,7 @@ a:hover span::after  {
 
 .container .feed-50{
   position: absolute;
-  top: 41.8%;
+  top: 39.35%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -313,7 +309,7 @@ a:hover span::after  {
 
 .container .feed-40{
   position: absolute;
-  top: 42.6%;
+  top: 39.7%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -325,7 +321,7 @@ a:hover span::after  {
 
 .container .feed-30{
   position: absolute;
-  top: 43.5%;
+  top: 40.1%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -337,7 +333,7 @@ a:hover span::after  {
 
 .container .feed-20{
   position: absolute;
-  top: 44.4%;
+  top: 40.5%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -350,7 +346,7 @@ a:hover span::after  {
 
 .container .feed-10{
   position: absolute;
-  top: 45.2%;
+  top: 40.8%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -397,7 +393,7 @@ a:hover span::after  {
 
 .container .nap-90{
   position: absolute;
-  top: 38.6%;
+  top: 38.18%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -409,7 +405,7 @@ a:hover span::after  {
 
 .container .nap-80{
   position: absolute;
-  top: 39.4%;
+  top: 38.45%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -421,7 +417,7 @@ a:hover span::after  {
 
 .container .nap-70{
   position: absolute;
-  top: 40.3%;
+  top: 38.75%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -433,7 +429,7 @@ a:hover span::after  {
 
 .container .nap-60{
   position: absolute;
-  top: 41%;
+  top: 39.25%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -445,7 +441,7 @@ a:hover span::after  {
 
 .container .nap-50{
   position: absolute;
-  top: 41.8%;
+  top: 39.35%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -457,7 +453,7 @@ a:hover span::after  {
 
 .container .nap-40{
   position: absolute;
-  top: 42.6%;
+  top: 39.7%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -469,7 +465,7 @@ a:hover span::after  {
 
 .container .nap-30{
   position: absolute;
-  top: 43.5%;
+  top: 40.1%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -481,7 +477,7 @@ a:hover span::after  {
 
 .container .nap-20{
   position: absolute;
-  top: 44.4%;
+  top: 40.5%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -494,7 +490,7 @@ a:hover span::after  {
 
 .container .nap-10{
   position: absolute;
-  top: 45.2%;
+  top: 40.8%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -542,7 +538,7 @@ a:hover span::after  {
 
 .container .play-90{
   position: absolute;
-  top: 68.6%;
+  top: 68.18%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -554,7 +550,7 @@ a:hover span::after  {
 
 .container .play-80{
   position: absolute;
-  top: 69.4%;
+  top: 68.45%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -566,7 +562,7 @@ a:hover span::after  {
 
 .container .play-70{
   position: absolute;
-  top: 70.3%;
+  top: 68.75%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -578,7 +574,7 @@ a:hover span::after  {
 
 .container .play-60{
   position: absolute;
-  top: 71%;
+  top: 69.25%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -590,7 +586,7 @@ a:hover span::after  {
 
 .container .play-50{
   position: absolute;
-  top: 71.8%;
+  top: 69.35%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -602,7 +598,7 @@ a:hover span::after  {
 
 .container .play-40{
   position: absolute;
-  top: 72.6%;
+  top: 69.7%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -614,7 +610,7 @@ a:hover span::after  {
 
 .container .play-30{
   position: absolute;
-  top: 73.5%;
+  top: 70.1%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -626,7 +622,7 @@ a:hover span::after  {
 
 .container .play-20{
   position: absolute;
-  top: 74.4%;
+  top: 70.5%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -639,7 +635,7 @@ a:hover span::after  {
 
 .container .play-10{
   position: absolute;
-  top: 75.2%;
+  top: 70.8%;
   left: 69%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -686,7 +682,7 @@ a:hover span::after  {
 
 .container .clean-90{
   position: absolute;
-  top: 68.6%;
+  top: 68.18%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -698,7 +694,7 @@ a:hover span::after  {
 
 .container .clean-80{
   position: absolute;
-  top: 69.4%;
+  top: 68.45%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -710,7 +706,7 @@ a:hover span::after  {
 
 .container .clean-70{
   position: absolute;
-  top: 70.3%;
+  top: 68.75%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -722,7 +718,7 @@ a:hover span::after  {
 
 .container .clean-60{
   position: absolute;
-  top: 71%;
+  top: 69.25%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -734,7 +730,7 @@ a:hover span::after  {
 
 .container .clean-50{
   position: absolute;
-  top: 71.8%;
+  top: 69.35%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -746,7 +742,7 @@ a:hover span::after  {
 
 .container .clean-40{
   position: absolute;
-  top: 72.6%;
+  top: 69.7%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -758,7 +754,7 @@ a:hover span::after  {
 
 .container .clean-30{
   position: absolute;
-  top: 73.5%;
+  top: 70.1%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -770,7 +766,7 @@ a:hover span::after  {
 
 .container .clean-20{
   position: absolute;
-  top: 74.4%;
+  top: 70.5%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -783,7 +779,7 @@ a:hover span::after  {
 
 .container .clean-10{
   position: absolute;
-  top: 75.2%;
+  top: 70.8%;
   left: 31%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
