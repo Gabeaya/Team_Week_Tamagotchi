@@ -5,6 +5,7 @@ import './css/styles.css';
 //import Tamagotchi from './js/tamagotchi.js';
 /* eslint-disable no-console */
 
+<<<<<<< HEAD
 function disableColors(level) {
   for (let i = 100; i > 0; i-=10) {
     $(`.${level}-${i}`).hide();
@@ -34,6 +35,8 @@ disableColors("nap");
 
 
 testColors();
+=======
+>>>>>>> 3eec5ec349dbb61c1eef97b6405a374efdd254f9
 var position = 0;
 
 function decipherPosition(position) {
