@@ -5,6 +5,12 @@ import './css/styles.css';
 //import Tamagotchi from './js/tamagotchi.js';
 /* eslint-disable no-console */
 
+function disableColors(level) {
+  for (let i = 100; i > 0; i-=10) {
+    $(`.${level}-${i}`).hide();
+  }
+}
+
 var position = 0;
 
 function decipherPosition(position) {
