@@ -12,12 +12,12 @@ function disableColors(level) {
 }
 
 function testColors() {
-  const level = "feed"
+  const level = "feed";
   for (let i = 100; i > 0; i-=10) {
     setTimeout(function(){ 
       disableColors(level);
       alert("hey");
-      $(`.${level}-${i}`).show()
+      $(`.${level}-${i}`).show();
     }, 3000);
     console.log(`.${level}-${i}`);
     // setInterval(function() {

@@ -23,9 +23,10 @@ export default class Tamagotchi {
     function energyTimer() {
     myself.energrySubtractor();
     }
-    function poopTimer() {
-      myself.
-    }
+    
+    // function poopTimer() {
+    //   myself.
+    // }
 
     setInterval(hungerTimer, 10000)
     setInterval(happinessTimer, 10000)
@@ -70,6 +71,6 @@ hygieneAdder() {
 }
 
 
-/* this.interval = setInterval(function () {
-  me.updateCountdown();
-}, 1000)
+// /* this.interval = setInterval(function () {
+//   me.updateCountdown();
+// }, 1000)
