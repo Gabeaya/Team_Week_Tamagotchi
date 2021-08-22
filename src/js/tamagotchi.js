@@ -5,14 +5,16 @@ export default class Tamagotchi {
     this.happiness = 100;
     this.energy = 100;
     this.hygiene = 80;
+    this.boredom = 0;
     this.existentialDread = 0;
     this.age = 0;
     this.poop = false;
-    this.timePeriod = 100000;
+    this.lifeSpan = 240000; //4 minute lifespan for demo.
     this.nap = false;
     this.state = "zoomer";
     this.interval = interval;
     let myself = this;
+    this.timeSpeed = 20;
     
     function hungerTimer() {
     myself.hungerSubtractor();
@@ -28,9 +30,9 @@ export default class Tamagotchi {
     //   myself.
     // }
 
-    setInterval(hungerTimer, 10000)
-    setInterval(happinessTimer, 10000)
-    setInterval(energyTimer, 10000)
+    setInterval(hungerTimer, 60000 / this.timeSpeed)
+    setInterval(happinessTimer, 10000 / this.timeSpeed)
+    setInterval(energyTimer, 10000 / this.timeSpeed)
   }
 
 hungerAdder() {
@@ -61,7 +63,6 @@ energryAdder() {
 
 energrySubtractor() {
     this.energy -= 10;
-  }
 }
 
 hygieneAdder() {
@@ -69,6 +70,8 @@ hygieneAdder() {
     this.hygiene += 10;
   }
 }
+
+
 
 
 // /* this.interval = setInterval(function () {
