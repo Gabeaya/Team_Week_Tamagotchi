@@ -1,6 +1,158 @@
-body {
-  background-color: white;
+*{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  box-sizing: border-box;
+
 }
+/* Tamagotchi banner*/
+.block {
+  position: relative;
+  margin: 100px auto 0;
+  width: 1250px;
+  height: 350px;
+  background: linear-gradient(0deg, #FFAAA7, #FFD3B4);
+  padding: 20px;
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+/*background*/
+body {
+  height: 100vh;
+  background-color: #FFAAA7;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*menu header*/
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(16, 20, 46);
+  background-color: #FFD3B4;
+
+}
+header ul{
+  list-style:none;
+  display: flex;
+}
+header ul li{
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+header ul li:hover{
+  background:linear-gradient(#FFAAA7,#FFD3B4);
+  color: #000;
+  border-radius: 10%;
+}
+header ul li:nth-child(1){
+  border-top: 4px solid #cc33ff;
+}
+/* name form */
+#name1 {
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.5);
+  width: 275px;
+  margin-left: 43%;
+}
+/*start game button*/
+a {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 255, 123);
+  font-size: 30px;
+  font-family: verdana;
+  letter-spacing: 4px;
+  padding-left: 5px;
+}
+
+a::before,
+a::after,
+span::before,
+span::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  transition: 1s;
+}
+
+a::before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid rgb(0, 255, 238);
+  border-left: 2px solid rgb(0, 255, 238);
+}
+a::after {
+  top: -2px;
+  right: -2px;
+  border-top: 2px solid rgb(0, 255, 238);
+  border-right: 2px solid rgb(0, 255, 238);
+}
+
+span::before {
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 2px solid rgb(0, 255, 238);
+  border-left: 2px solid rgb(0, 255, 238);
+}
+span::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid rgb(0, 255, 238);
+  border-right: 2px solid rgb(0, 255, 238);
+}
+
+a:hover::before,
+a:hover::after,
+a:hover span::before,
+a:hover span::after  {
+  width: calc( 250px / 2);
+  height: calc( 50px / 2);
+}
+
+
+/*app page*/
 
 .container {
   position: relative;
