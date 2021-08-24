@@ -245,6 +245,10 @@ a:hover span::after  {
   max-width: 800px;
 }
 
+#dropShadow {
+  filter: drop-shadow(25px 1px 10px #3a3939);
+}
+
 .container img {
   width: 100%;
   height: auto;
