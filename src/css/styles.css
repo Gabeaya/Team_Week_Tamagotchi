@@ -57,7 +57,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: rgb(16, 20, 46);
+  color: rgb(252, 252, 4);
   background-color: #FFD3B4;
 }
 
@@ -95,11 +95,9 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: rgb(0, 255, 123);
-  font-size: 30px;
+  color: rgb(242, 255, 0);
+  font-size: 50px;
   font-family: verdana;
-  letter-spacing: 4px;
-  padding-left: 5px;
 }
 
 /*app page*/
@@ -184,7 +182,7 @@ a {
 .container .death {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
