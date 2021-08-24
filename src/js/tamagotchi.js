@@ -43,9 +43,7 @@ export default class Tamagotchi {
   }
 
   hungerAdder() {
-    if (this.hunger < 100) {
-      this.hunger += 10;
-    }
+    this.hunger = 100;
   }
 
   hungerSubtractor() {

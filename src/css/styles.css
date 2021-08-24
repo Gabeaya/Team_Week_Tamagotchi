@@ -143,6 +143,83 @@ a:hover span::after  {
 
 /*app page*/
 
+.container .gozi-clean {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.container .shower {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.container .gozi-eat {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.container .chocolate {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container .food-cloud {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.container .hungry {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container .birth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.container .default {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .container .death {
   display: none;
   position: absolute;
@@ -203,23 +280,6 @@ a:hover span::after  {
   border: none;
   cursor: pointer;
 }
-
-
-
-
-
-.container .default {
-  position: absolute;
-  top: 38%;
-  left: 31%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  border-style: ridge;
-  border-color: black;
-  width: 69px;
-  height: 69px;
-}
-
 
 .container .feed-highlight {
   position: absolute;
@@ -795,9 +855,4 @@ a:hover span::after  {
   width: 69px;
   height: 6.9px;
   display: none;
-}
-
-
-.show-errors {
-  color: red;
 }
