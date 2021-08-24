@@ -58,7 +58,8 @@ function assessHunger () {
     $(".feed-10").show();
   } else if (tamagotchi.hunger >= 0 ){
     disableColors("feed");
-    $(".gif-space").attr("src", "assets/images/toilet.png");
+    // $(".gif-space").attr("src", "assets/images/gozi.gif");
+    $(".death").show();
     clearInterval(myTimer);
   }
 }
