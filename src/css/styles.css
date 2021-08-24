@@ -82,8 +82,16 @@ header ul li:nth-child(1){
 }
 
 /*start game button*/
+.text-box {
+  margin: 50px;
+  width: 30%;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
 a {
-
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -93,53 +101,6 @@ a {
   letter-spacing: 4px;
   padding-left: 5px;
 }
-
-a::before,
-a::after,
-span::before,
-span::after {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: transparent;
-  transition: 1s;
-}
-
-a::before {
-  top: -2px;
-  left: -2px;
-  border-top: 2px solid rgb(0, 255, 238);
-  border-left: 2px solid rgb(0, 255, 238);
-}
-a::after {
-  top: -2px;
-  right: -2px;
-  border-top: 2px solid rgb(0, 255, 238);
-  border-right: 2px solid rgb(0, 255, 238);
-}
-
-span::before {
-  bottom: -2px;
-  left: -2px;
-  border-bottom: 2px solid rgb(0, 255, 238);
-  border-left: 2px solid rgb(0, 255, 238);
-}
-span::after {
-  bottom: -2px;
-  right: -2px;
-  border-bottom: 2px solid rgb(0, 255, 238);
-  border-right: 2px solid rgb(0, 255, 238);
-}
-
-a:hover::before,
-a:hover::after,
-a:hover span::before,
-a:hover span::after  {
-  width: calc( 250px / 2);
-  height: calc( 50px / 2);
-}
-
 
 /*app page*/
 
@@ -229,15 +190,7 @@ a:hover span::after  {
   -ms-transform: translate(-50%, -50%);
 }
 
-.text-box {
-  margin: 50px;
-  width: 30%;
-  margin: auto;
-  padding: 50px;
-  text-align: center;
-  vertical-align: middle;
-  justify-content: center;
-}
+
 
 .container {
   position: relative;
