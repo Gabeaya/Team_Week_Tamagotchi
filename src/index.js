@@ -55,7 +55,7 @@ setTimeout(function(){
   $(".default").show();
   main();
   }, 
-  11000);
+  8400);//seemless time transition
 
 function main () {
   var position = 0;
