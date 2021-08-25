@@ -9,8 +9,8 @@ export default class Tamagotchi {
     this.age = 0;
     this.poop = false;
     this.day = true;
-    this.dayLength = 112222; //Figure out how to determine day and night. Needs to flip to 0 and start again.
-    this.lifeSpan = 240000; //4 minute lifespan for demo.
+    this.dayLength = 112222; 
+    this.lifeSpan = 240000;
     this.nap = false;
     this.state = "zoomer";
     this.timeSpeed = 20;
@@ -25,9 +25,8 @@ export default class Tamagotchi {
     }
     
 
-    var hungerTimerInterval = setInterval(hungerTimer, 5000);
-    hungerTimerInterval;
-    // setInterval(happinessTimer, 10000 / this.timeSpeed) Happiness should be set by other factors rather than time. i.e. boredom, energy, hygiene, 
+    let hungerTimerInterval = setInterval(hungerTimer, 5000);
+    hungerTimerInterval; 
     setInterval(energyTimer, 10000 / this.timeSpeed);
   }
 
