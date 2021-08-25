@@ -5,7 +5,6 @@ import './css/styles.css';
 import Tamagotchi from './js/tamagotchi.js';
 /* eslint-disable no-console */
 
-
 function disableColors(level) {
   for (let i = 100; i > 0; i-=10) {
     $(`.${level}-${i}`).hide(); // eg (.feed-100).hide();
@@ -29,8 +28,6 @@ function death() {
   $(".death").show();
 }
 
-
-// changeGifStatus(var, var "", time);
 function changeGifStatus(currentGifClass, newGifClass, secondGif, gifTimeMS) {
   $(`.${currentGifClass}`).toggle();
   $(`.${newGifClass}`).toggle();
@@ -48,8 +45,6 @@ function changeGifStatus(currentGifClass, newGifClass, secondGif, gifTimeMS) {
     gifTimeMS);
 }
 
-
-
 setTimeout(function(){
   $(".birth").hide();
   $(".default").show();
@@ -62,7 +57,7 @@ function main () {
 
   var tamagotchi = new Tamagotchi();
 
-  var myTimer = setInterval(assessHunger, 1000);
+  var myTimer = setInterval(assessHunger, 5000);
 
   myTimer;
   
@@ -101,17 +96,13 @@ function main () {
       disableColors("feed");
       $(".feed-10").show();
     } else if (tamagotchi.hunger >= 0 ){
-      $("default").html("");
       death();
       clearInterval(myTimer);
     }
   }
   
-  
   function decipherPosition(position) {
-    /* eslint-disable no-console */
     disableCursors();
-    /* eslint-enable no-console */
     if (position === 0) {
       $(".feed-highlight").show();
     } else if (position === 1){ 
@@ -129,11 +120,7 @@ function main () {
     $(".feed-highlight").hide();
     $(".clean-highlight").hide();
   }
-  
-  
   $(document).ready(function() {
-
-  
     $('.btn-left').click(function() {
       if (position - 1 === -1) {
         position = 3;
@@ -147,14 +134,13 @@ function main () {
       if (position === 0) {
         console.log("feed");
         tamagotchi.hungerAdder();
-        changeGifStatus("default", "gozi-eat", "chocolate", 5000);
+        changeGifStatus("default", "gozi-eat", "chocolate", 4000);
       } else if (position === 1) {
-        console.log("nap");
+        changeGifStatus("default", "gozi-sleep", "", 4000)
       } else if (position === 2) {
-        changeGifStatus("default", "gozi-clean", "shower", 5000);
-        console.log("clean");
+        changeGifStatus("default", "gozi-clean", "shower", 4000);
       } else if (position === 3){ 
-        console.log("play");
+        changeGifStatus("default", "gozi-play", "", 4000);
       }
     });
     $('.btn-right').click(function() {
@@ -166,7 +152,5 @@ function main () {
       decipherPosition(position);
       event.preventDefault();
     });
-  
   });
-
 }

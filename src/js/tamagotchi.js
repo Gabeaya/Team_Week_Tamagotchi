@@ -16,27 +16,16 @@ export default class Tamagotchi {
     this.timeSpeed = 20;
     let myself = this;
     
-    // function dayTimer() {
-
-    // }
-
     function hungerTimer() {
       myself.hungerSubtractor();
     }
-    
-    // function happinessTimer() {
-    // myself.happinessSubtractor();
-    // }
     
     function energyTimer() {
       myself.energrySubtractor();
     }
     
-    // function poopTimer() {
-    //   myself.
-    // }
 
-    var hungerTimerInterval = setInterval(hungerTimer, 1000);
+    var hungerTimerInterval = setInterval(hungerTimer, 5000);
     hungerTimerInterval;
     // setInterval(happinessTimer, 10000 / this.timeSpeed) Happiness should be set by other factors rather than time. i.e. boredom, energy, hygiene, 
     setInterval(energyTimer, 10000 / this.timeSpeed);
@@ -50,8 +39,6 @@ export default class Tamagotchi {
     this.hunger -= 10;
     if (this.hunger < 0) {
       this.hunger = 0;
-      // clearInterval(hungerTimerInterval);
-      // death()
     }
   }
 

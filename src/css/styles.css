@@ -113,6 +113,23 @@ a {
 }
 
 /*app page*/
+.container .gozi-play {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container .gozi-sleep {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 
 .container .gozi-clean {
   display: none;
@@ -123,7 +140,6 @@ a {
   -ms-transform: translate(-50%, -50%);
 }
 
-
 .container .shower {
   display: none;
   position: absolute;
@@ -133,8 +149,6 @@ a {
   -ms-transform: translate(-50%, -50%);
 }
 
-
-
 .container .gozi-eat {
   display: none;
   position: absolute;
@@ -143,7 +157,6 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 
 .container .chocolate {
   display: none;
@@ -163,7 +176,6 @@ a {
   -ms-transform: translate(-50%, -50%);
 }
 
-
 .container .hungry {
   display: none;
   position: absolute;
@@ -180,7 +192,6 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 
 .container .default {
   display: none;
@@ -199,8 +210,6 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
-
 
 .container {
   position: relative;
@@ -237,7 +246,6 @@ a {
   cursor: pointer;
 }
 
-
 .container .btn-right {
   position: absolute;
   top: 83%;
@@ -260,7 +268,6 @@ a {
   height: 69px;
 }
 
-
 .container .feed {
   position: absolute;
   top: 38%;
@@ -269,7 +276,6 @@ a {
   -ms-transform: translate(-50%, -50%);
   border: none;
 }
-
 
 .container .feed-100{
   position: absolute;
@@ -378,7 +384,6 @@ a {
   display: none;
 }
 
-
 .container .feed-10{
   position: absolute;
   top: 40.8%;
@@ -412,8 +417,6 @@ a {
   -ms-transform: translate(-50%, -50%);
   border: none;
 }
-
-
 
 .container .nap-100{
   position: absolute;
@@ -522,7 +525,6 @@ a {
   display: none;
 }
 
-
 .container .nap-10{
   position: absolute;
   top: 40.8%;
@@ -557,8 +559,6 @@ a {
   height: 69px;
   display: none;
 }
-
-
 
 .container .play-100{
   position: absolute;
@@ -667,7 +667,6 @@ a {
   display: none;
 }
 
-
 .container .play-10{
   position: absolute;
   top: 70.8%;
@@ -701,8 +700,6 @@ a {
   height: 69px;
   display: none;
 }
-
-
 
 .container .clean-100{
   position: absolute;
@@ -810,7 +807,6 @@ a {
   height: 13.8px;
   display: none;
 }
-
 
 .container .clean-10{
   position: absolute;
