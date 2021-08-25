@@ -7,15 +7,12 @@ import Tamagotchi from './js/tamagotchi.js';
 
 function disableColors(level) {
   for (let i = 100; i > 0; i-=10) {
-    $(`.${level}-${i}`).hide(); // eg (.feed-100).hide();
+    $(`.${level}-${i}`).hide();
+
   }
 }
 
 function death() {
-  disableColors("nap");
-  disableColors("feed");
-  disableColors("play");
-  disableColors("clean");
   $(".clean").hide();
   $(".clean-highlight").hide();
   $(".play").hide();
@@ -40,65 +37,69 @@ function changeGifStatus(currentGifClass, newGifClass, secondGif, gifTimeMS) {
     if (secondGif !== "") {
       $(`.${secondGif}`).toggle();
     }
-
-    }, 
-    gifTimeMS);
+  }, 
+  gifTimeMS);
 }
 
 setTimeout(function(){
   $(".birth").hide();
   $(".default").show();
   main();
-  }, 
-  8400);//seemless time transition
+}, 
+8400);//seemless time transition
 
 function main () {
   var position = 0;
-
   var tamagotchi = new Tamagotchi();
-
-  var myTimer = setInterval(assessHunger, 5000);
+  var myTimer = setInterval(assessAttributes, 5000);
+  var attributes = ["feed", "clean", "nap", "play"];
 
   myTimer;
   
-  function assessHunger () {
-    console.log(tamagotchi.hunger);
-    if (tamagotchi.hunger >= 90 && tamagotchi.hunger <= 100){
-      disableColors("feed");
-      $(".feed-100").show();
-    } else if (tamagotchi.hunger >= 80 && tamagotchi.hunger < 90){
-      disableColors("feed");
-      $(".feed-90").show();
-    } else if (tamagotchi.hunger >= 70 && tamagotchi.hunger < 80){
-      disableColors("feed");
-      $(".feed-80").show();
-    } else if (tamagotchi.hunger >= 60 && tamagotchi.hunger < 70){
-      disableColors("feed");
-      $(".feed-70").show();
-    } else if (tamagotchi.hunger >= 50 && tamagotchi.hunger < 60){
-      disableColors("feed");
-      $(".feed-60").show();
-      $(".feed-100").hide();
-    } else if (tamagotchi.hunger >= 40 && tamagotchi.hunger < 50){
-      disableColors("feed");
-      $(".feed-50").show();
-    } else if (tamagotchi.hunger >= 30 && tamagotchi.hunger < 40){
-      disableColors("feed");
-      $(".feed-40").show();
-      changeGifStatus("default", "hungry", "food-cloud", 3000);
-    } else if (tamagotchi.hunger >= 20 && tamagotchi.hunger < 30){
-      disableColors("feed");
-      $(".feed-30").show();
-    } else if (tamagotchi.hunger >= 10 && tamagotchi.hunger < 20){
-      disableColors("feed");
-      $(".feed-20").show();
-    } else if (tamagotchi.hunger > 0 && tamagotchi.hunger < 10){
-      disableColors("feed");
-      $(".feed-10").show();
-    } else if (tamagotchi.hunger >= 0 ){
-      death();
-      clearInterval(myTimer);
-    }
+  function assessAttributes () {
+    attributes.forEach(attribute => {
+      tamagotchi[attribute] -= 10;
+      if (tamagotchi[attribute] >= 90 && tamagotchi[attribute] <= 100){
+        disableColors(attribute);
+        $(`.${attribute}-100`).show();
+      } else if (tamagotchi[attribute] >= 80 && tamagotchi[attribute] < 90){
+        disableColors(attribute);
+        $(`.${attribute}-90`).show();
+      } else if (tamagotchi[attribute] >= 70 && tamagotchi[attribute] < 80){
+        disableColors(attribute);
+        $(`.${attribute}-80`).show();
+      } else if (tamagotchi[attribute] >= 60 && tamagotchi[attribute] < 70){
+        $(".nap-70").show();
+        $(`.${attribute}-70`).show();
+      } else if (tamagotchi[attribute] >= 50 && tamagotchi[attribute] < 60){
+        $(".nap-60").show();
+        $(`.${attribute}-60`).show();
+      } else if (tamagotchi[attribute] >= 40 && tamagotchi[attribute] < 50){
+        $(`.${attribute}-50`).show();
+      } else if (tamagotchi.feed >= 40 && tamagotchi.feed < 50){
+        changeGifStatus("default", "hungry", "food-cloud", 3000);
+      } else if (tamagotchi[attribute] >= 30 && tamagotchi[attribute] < 40){
+        disableColors(attribute);
+        $(`.${attribute}-40`).show();
+      } else if (tamagotchi[attribute] >= 20 && tamagotchi[attribute] < 30){
+        disableColors(attribute);
+        $(`.${attribute}-30`).show();
+      } else if (tamagotchi[attribute] >= 10 && tamagotchi[attribute] < 20){
+        $(".nap-20").show();
+        $(`.${attribute}-20`).show();
+      } else if (tamagotchi[attribute] > 0 && tamagotchi[attribute] < 10){
+        $(".nap-10").show();
+        $(`.${attribute}-10`).show();
+      } else if (tamagotchi[attribute] >= 0 ){
+        disableColors("nap");
+        disableColors("feed");
+        disableColors("play");
+        disableColors("clean");
+        death();
+        clearInterval(myTimer);
+      }
+    })
+
   }
   
   function decipherPosition(position) {
@@ -133,14 +134,17 @@ function main () {
     $('.btn-select').click(function() {
       if (position === 0) {
         console.log("feed");
-        tamagotchi.hungerAdder();
         changeGifStatus("default", "gozi-eat", "chocolate", 4000);
+        tamagotchi.feed = 100;
       } else if (position === 1) {
         changeGifStatus("default", "gozi-sleep", "", 4000)
+        tamagotchi.nap = 100;
       } else if (position === 2) {
         changeGifStatus("default", "gozi-clean", "shower", 4000);
+        tamagotchi.clean = 100;
       } else if (position === 3){ 
         changeGifStatus("default", "gozi-play", "", 4000);
+        tamagotchi.play = 100;
       }
     });
     $('.btn-right').click(function() {

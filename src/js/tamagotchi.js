@@ -1,9 +1,9 @@
 export default class Tamagotchi {
   constructor() {
-    this.hunger = 80;
-    this.happiness = 100;
-    this.energy = 100;
-    this.hygiene = 80;
+    this.feed = 100;
+    this.play = 100;
+    this.nap = 100;
+    this.clean = 100;
     this.boredom = 0;
     this.existentialDread = 0;
     this.age = 0;
@@ -14,61 +14,5 @@ export default class Tamagotchi {
     this.nap = false;
     this.state = "zoomer";
     this.timeSpeed = 20;
-    let myself = this;
-    
-    function hungerTimer() {
-      myself.hungerSubtractor();
-    }
-    
-    function energyTimer() {
-      myself.energrySubtractor();
-    }
-    
-
-    var hungerTimerInterval = setInterval(hungerTimer, 5000);
-    hungerTimerInterval;
-    // setInterval(happinessTimer, 10000 / this.timeSpeed) Happiness should be set by other factors rather than time. i.e. boredom, energy, hygiene, 
-    setInterval(energyTimer, 10000 / this.timeSpeed);
-  }
-
-  hungerAdder() {
-    this.hunger = 100;
-  }
-
-  hungerSubtractor() {
-    this.hunger -= 10;
-    if (this.hunger < 0) {
-      this.hunger = 0;
-    }
-  }
-
-  happinessAdder() {
-    if (this.happiness < 100) {
-      this.happiness += 10;
-    }
-  }
-
-  happinessSubtractor() {
-    this.happiness -= 10;
-  }
-
-  energryAdder() {
-    if (this.energy < 100) {
-      this.energy += 10;
-    }
-  }
-
-  energrySubtractor() {
-    this.energy -= 10;
-  }
-
-  hygieneAdder() {
-    if (this.hygiene < 100) {
-      this.hygiene += 10;
-    }
-  }
-
-  hygieneSubtractor() {
-    this.hygiene -= 10;
   }
 }
