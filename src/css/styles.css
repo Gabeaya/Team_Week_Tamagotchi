@@ -57,8 +57,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: rgb(38, 39, 69);
+  color: #FFAAA7;
   background-color: #FFD3B4;
+  font-family: fantasy;
+  font-size: 20px;
 }
 
 header ul{
@@ -71,6 +73,7 @@ header ul li{
   line-height: 60px;
   text-align: center;
   cursor: pointer;
+  font-family:verdana;
 }
 header ul li:hover{
   background:linear-gradient(#FFAAA7,#FFD3B4);
@@ -78,7 +81,7 @@ header ul li:hover{
   border-radius: 10%;
 }
 header ul li:nth-child(1){
-  border-top: 4px solid #cc33ff;
+  border-top: 4px solid #FFAAA7;
 }
 
 /*start game button*/
@@ -92,10 +95,19 @@ header ul li:nth-child(1){
   justify-content: center;
 }
 a {
+  height: 120px;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  border-style: outset;
+  background-color: #FFD3B4;
+  border-width: 5px;
+  box-sizing: border-box;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: rgb(242, 255, 0);
+  color: #FFAAA7;
   font-size: 50px;
   font-family: verdana;
 }
