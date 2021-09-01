@@ -36,7 +36,7 @@
 * webpack
 * webpack-cli
 * webpack-dev-server
-* www.exchangerate-api.com
+
 
 ## Description <a id="description"></a>
 Upon starting the game, an egg appears and the egg hatches revealing "Gozi" which is the ghost version of a Tamagotchi. The user is obligated to care for their Tamagotchi or the poor thing will die. The animations will show the "state" of Gozi and whether or not it is happy, tired, sad, etc and what actions need to be taken to bring all the specs up to 100% for Gozi. Currently there are four action an user can select: feed, nap, clean and playwith. Currently only the hunger function works.
